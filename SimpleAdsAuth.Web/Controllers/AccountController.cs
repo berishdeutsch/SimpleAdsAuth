@@ -21,6 +21,7 @@ namespace SimpleAdsAuth.Web.Controllers
         public IActionResult Login()
         {
             var vm = new LoginViewModel();
+
             if (TempData["message"] != null)
             {
                 vm.Message = TempData["message"].ToString();
